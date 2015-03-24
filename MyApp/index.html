@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app xmlns="http://www.w3.org/1999/html">
+<head lang="en" >
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+</head>
+<body>
+<form>
+    <label>Write Some Text In The Field
+<input type="text" ng-model="name">
+    </label>
+</form>
+<h2>Hello <span ng-show="name">{{name}}</span></h2>
+<h4>Uppercase: {{ name | uppercase }}</h4>
+<h4>Lowercase: {{ name | lowercase }}</h4>
+</body>
+</html>
